@@ -9,6 +9,9 @@
     "build": "tsc",
     "prepublish": "tsc"
   },
+  "files": [
+    "dist"
+  ],
   "author": "Daniel Smedema",
   "license": "MIT",
   "repository": {
