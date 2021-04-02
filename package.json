@@ -1,19 +1,19 @@
 {
-  "name": "amplify-slow-table-create",
+  "name": "amplify-sequential-table-create",
   "version": "1.0.0",
-  "description": "A plugin that can be used to slow down table creation for new environments with large # of models in the schema that would cause concurrent plane request error.",
+  "description": "A plugin that causes local amplify push to create dynamo tables serially instead of in parallel to avoid simultaneous table creation limits.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "= <=>",
+  "author": "Daniel Smedema",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mormsbee/amplify-slow-table-create.git"
+    "url": "git+https://github.com/Encamp/amplify-slow-table-create.git"
   },
   "bugs": {
-    "url": "https://github.com/mormsbee/amplify-slow-table-create/issues"
+    "url": "https://github.com/Encamp/amplify-slow-table-create/issues"
   },
-  "homepage": "https://github.com/mormsbee/amplify-slow-table-create#readme"
+  "homepage": "https://github.com/Encamp/amplify-slow-table-create#readme"
 }
