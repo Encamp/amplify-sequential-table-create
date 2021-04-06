@@ -1,17 +1,12 @@
 const eventName = "PrePush";
 
 export async function run(context, args) {
-  // insert your code to handle the amplify cli PrePush event
-  context.print.info(`Event handler ${eventName} to be implemented.`);
-
   console.log(context);
 
-  let cftloc =
-    "./amplify/backend/api/atlasAPI/build/cloudformation-template.json";
+  let cftloc = "./amplify/backend/api/ash/build/cloudformation-template.json";
   console.log(cftloc);
 
   let cft = context.filesystem.read(cftloc);
-
   if (!cft) {
     console.log("ERROR! NO Cloudformation Template found.");
     return;
@@ -19,8 +14,8 @@ export async function run(context, args) {
 
   let cftJson = JSON.parse(cft);
   let cftResources = cftJson.Resources;
-  let item,
-    dependOnName = "";
+  let item = "";
+  let dependOnName = "";
 
   for (item in cftResources) {
     if (
@@ -52,7 +47,7 @@ export async function run(context, args) {
   } else {
     result = JSON.stringify(result, null, 2);
   }
-  console.log(result);
+  // console.log(result);
 
   context.filesystem.write(cftloc, result);
 }
