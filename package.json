@@ -10,7 +10,8 @@
     "prepare": "tsc"
   },
   "files": [
-    "dist"
+    "dist",
+    "amplify-plugin.json"
   ],
   "author": "Daniel Smedema",
   "license": "MIT",

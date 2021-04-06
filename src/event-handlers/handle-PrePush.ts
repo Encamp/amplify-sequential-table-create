@@ -12,7 +12,7 @@ interface CfnResourceBody {
 }
 
 function print(message: string) {
-  console.log(`Plugin amplify-sequential-table-create:`, "\t", message);
+  console.log(`Plugin sequential-table-create:`, "\t", message);
 }
 
 export async function run(context, args) {
