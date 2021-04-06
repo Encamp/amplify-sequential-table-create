@@ -11,5 +11,6 @@
     "strict": false,
     "outDir": "dist"
   },
+  "include": ["src/amplify-plugin.json"],
   "exclude": ["node_modules", "dist"]
 }
