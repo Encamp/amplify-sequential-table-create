@@ -1,11 +1,6 @@
 {
-  "name": "slow-table-create",
+  "name": "sequential-table-create",
   "type": "util",
-  "commands": [
-    "version",
-    "help"
-  ],
-  "eventHandlers": [
-    "PrePush"
-  ]
+  "commands": ["version", "help"],
+  "eventHandlers": ["PrePush"]
 }
